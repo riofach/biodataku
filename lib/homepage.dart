@@ -173,7 +173,7 @@ class _MyHomePageState extends State<MyHomePage> {
               const SizedBox(height: 16),
               ElevatedButton(onPressed: _addData, child: const Text('Save')),
               const SizedBox(height: 16),
-              Flexible(
+              Expanded(
                 child: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
                   stream: service?.getBiodata(),
                   builder: (context, snapshot) {
